@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片介面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 1920px;
+            height: 1080px;
+            background-color: #000;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-player {
+            width: 100%;
+            height: auto;
+            max-width: 1920px;
+            max-height: 1080px;
+        }
+        .video-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #fff;
+        }
+        .video-info {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #aaa;
+        }
+        .video-info span {
+            margin-right: 15px;
+        }
+        .actions {
+            display: flex;
+            margin-top: 15px;
+        }
+        .action-btn {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            cursor: pointer;
+            color: #aaa;
+        }
+        .action-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .action-btn:hover {
+            color: #fff;
+        }
+        .subscribe-btn {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 使用 <video> 標籤來播放本地影片 -->
+    <div class="video-player">
+        <video width="1920" height="1080" controls>
+            <source src="C:\Users\User\Desktop\视频\2024_05_31_22_58_IMG_6367.MOV" type="video/mp4">
+            您的瀏覽器不支援影片播放。
+        </video>
+    </div>
+    <div class="video-title">TOKYO FIVE DAYS TRIP</div>
+    <div class="video-info">
+        <span>493K subscribers</span>
+        <span>20K likes</span>
+        <span>57:56</span>
+    </div>
+    <div class="actions">
+        <div class="action-btn">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/like--v1.png" alt="Like">
+            <span>20K</span>
+        </div>
+        <div class="action-btn">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/share--v1.png" alt="Share">
+            <span>Share</span>
+        </div>
+        <div class="action-btn">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/download--v1.png" alt="Download">
+            <span>Download</span>
+        </div>
+        <div class="action-btn">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/thanks.png" alt="Thanks">
+            <span>Thanks</span>
+        </div>
+        <div class="action-btn">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/save.png" alt="Save">
+            <span>Save</span>
+        </div>
+        <div class="subscribe-btn">Subscribe</div>
+    </div>
+</div>
+
+</body>
+</html>
